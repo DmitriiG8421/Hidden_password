@@ -18,15 +18,16 @@ if index != -1:
 
 
 while True:
-    username = input("PLease type your username: ")
+    username = input("Please type your username: ")
     if username == correct_username:
         print("Username found.\n")
         password = input("Please type your password: ")
         if password == correct_password:
             print("Password found.\n Youa re logged in. Welcome!")
+            break
         else:
             print("Password not found. try again!\n")
             continue
     else:
-            print("Username not found. try again!\n")
-            continue
+        print("Username not found. try again!\n")
+        continue
